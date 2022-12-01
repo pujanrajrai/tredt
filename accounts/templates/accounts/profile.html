@@ -1,0 +1,43 @@
+{% extends 'home/base.html'%}
+{% load static%}
+
+{%block body%}  
+<section class="product spad">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <ul class="filter__controls">
+                  <li class="active" data-filter=".best-seller" id="bestest">
+                    <h3>My Profile</h3><br>
+                    <img src="{{profile.photo.url}}" height="200" width="200"><br>
+                    Username: {{profile.username}}<br>
+                    Full Name: {{profile.first_name.upper}} {{profile.last_name.upper}}<br>
+                    Email: {{profile.email}}<br>
+                    Phone: {{profile.phone_number}}<br>
+                  </li>
+                  
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+{% comment %} <section class="product spad">
+  <div class="container">
+      <div class="row">
+        <div class="log-form">
+            <h2>Login to your account</h2>
+            <form>
+              <input type="text" title="username" placeholder="username" />
+              <input type="password" title="username" placeholder="password" />
+              <button type="submit" class="btn">Login</button>
+              <a class="forgot" href="#">Forgot Username?</a>
+            </form>
+          </div><!--end log form -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> {% endcomment %}
+
+  {%endblock%}
